@@ -42,7 +42,15 @@ class App extends React.Component {
         console.log('App render executed');
         return (
             <div>
-            <Navbar ref="leftNav" history={this.props.history}/>
+            <Navbar history={this.props.history}>
+              <ul>
+                <li><Link to="/account">Личная информация</Link></li>
+                <li><Link to="/student-requests">Мои заявки</Link></li>
+                <li><Link to="/files">Мои файлы</Link></li>
+                <li><Link to="/faq">F.A.Q.</Link></li>
+                <li><Link to="/instructions">Инструкция</Link></li>
+              </ul>
+            </Navbar>
             <main>
                 {this.props.children}
             </main>
