@@ -6,10 +6,7 @@ import React from 'react/addons';
 import ReactMixin from 'react-mixin';
 import AccountStore from '../../stores/AccountStore';
 import AccountActions from '../../actions/AccountActions';
-
 import {TextField, SelectField, FlatButton} from 'material-ui';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
 class Account extends React.Component {
     constructor(props) {

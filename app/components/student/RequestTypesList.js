@@ -6,8 +6,6 @@ import RequestTypesActions from '../../actions/RequestTypesActions';
 import RequestTypesStore from '../../stores/RequestTypesStore';
 import {Link} from 'react-router';
 import {Card, CardHeader, CardText, CardActions, FlatButton, Avatar} from 'material-ui';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
 class RequestTypesList extends React.Component {
     constructor(props) {

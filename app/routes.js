@@ -14,8 +14,6 @@ import FAQ from './components/student/FAQ';
 import Instructions from './components/student/Instructions';
 import Signup from './components/Signup';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
 export default (
     <Route component={App} path="/">
@@ -31,5 +29,3 @@ export default (
         <Route component={Signup}          name='signup'           path='/signup'  />
     </Route>
 );
-
-

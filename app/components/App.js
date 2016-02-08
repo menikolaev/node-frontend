@@ -12,9 +12,6 @@ import { Route, Link } from 'react-router';
 import mui, {Styles} from 'material-ui';
 import AuthenticatedComponent from './AuthenticatedComponent';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
 // Get mui Components
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;

@@ -5,8 +5,6 @@ import React from 'react';
 import SubmittedRequestsActions from '../../actions/SubmittedRequestsActions';
 import SubmittedRequestsStore from '../../stores/SubmittedRequestsStore';
 import {Card, CardHeader, CardText, CardActions, FlatButton, Avatar} from 'material-ui';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
 class SubmittedRequestsList extends React.Component {
     constructor(props) {

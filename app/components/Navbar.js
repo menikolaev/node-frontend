@@ -3,9 +3,7 @@
  */
 import React from 'react';
 import { Router, Route, Link } from 'react-router'
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import AccountStore from '../stores/AccountStore';
-injectTapEventPlugin();
 
 let menuItems = [
     { route: 'home', text: 'Главная' },
