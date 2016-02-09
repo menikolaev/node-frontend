@@ -3,12 +3,18 @@ var webpack = require('webpack')
 
 module.exports = {
   context: __dirname + "/app",
-  entry: "./entry",
+  entry: {
+    app: "./entry.js",
+    vendor: ["jquery", "bootstrap", "toastr", "magnific-popup"],
+  },
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js",
     publicPath: '/static/'
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
+  ],
   module: {
     loaders: [{
         test: /\.js$/,

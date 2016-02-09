@@ -1,6 +1,7 @@
 /**
  * Created by mihailnikolaev on 15.12.15.
  */
+import jQuery from "jquery";
 import React from 'react';
 import Router from 'react-router';
 import ReactDOM from 'react-dom';
@@ -9,10 +10,6 @@ import routes from './routes';
 
 let history = createBrowserHistory();
 
-//Needed for onTouchTap
-//Can go away when react 1.0 release
-//Check this repo:
-//https://github.com/zilverline/react-tap-event-plugin
-
+window.$ = jQuery;
 
 ReactDOM.render(<Router history={history}>{routes}</Router>, document.getElementById('app'));

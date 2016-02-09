@@ -28,4 +28,8 @@ node_modules
 
 dist/bundle.js
 dist/bundle.js.map
+dist/vendor.bundle.js
+
 env
+
+bower_components
