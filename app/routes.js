@@ -17,9 +17,8 @@ import Signup from './components/Signup';
 
 export default (
     <Route component={App} path="/">
-        <Route component={RequestTypes}    name='home'             path='/home'>
-            <Route component={NewRequest}      name="new-request"      path="/new-request/:form_id" />
-        </Route>
+        <IndexRoute component={RequestTypes} />
+        <Route component={NewRequest}      name="new-request"      path="/new-request/:form_id" />
         <Route component={Account}         name="account"          path="/account" />
         <Route component={StudentRequests} name="student-requests" path="/student-requests" />
         <Route component={Files}           name="files"            path="/files" />

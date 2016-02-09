@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         let account = AccountStore.getState();
         return (
             <nav className="navbar">
-              <Link to='/home'>Home</Link>
+              <Link to='/'>Home</Link>
               <span>{account.name} {account.surname}</span>
               {this.props.children}
               <Link to='#'>Logout</Link>
