@@ -24,6 +24,15 @@ module.exports = {
       {
         test: /\.json$/,
         loader:'json-loader'
+      },
+      {
+        test: /\.css$/,
+        loaders: [
+          'style',
+          'css?modules&camelCase&localIdentName=[name]_[local]',
+          'autoprefixer?browsers=last 5 version',
+          // 'sass',
+        ],
       }
     ],
     noParse: /validate\.js/

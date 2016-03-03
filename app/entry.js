@@ -1,7 +1,7 @@
 /**
  * Created by mihailnikolaev on 15.12.15.
  */
-import jQuery from "jquery";
+import jQuery from 'jquery';
 import React from 'react';
 import Router from 'react-router';
 import ReactDOM from 'react-dom';

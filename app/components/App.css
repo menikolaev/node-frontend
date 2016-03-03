@@ -1,0 +1,8 @@
+.menu-item {
+  display: block;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+  color: #fff;
+}

@@ -14,7 +14,6 @@ import FAQ from './components/student/FAQ';
 import Instructions from './components/student/Instructions';
 import Signup from './components/Signup';
 
-
 export default (
     <Route component={App} path="/">
         <IndexRoute component={RequestTypes} />
