@@ -3,6 +3,21 @@
   padding-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
+  height: 60px;
+  box-sizing: border-box;
   float: left;
   color: #fff;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: #4eccdd;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.main {
+  padding-top: 60px;
 }

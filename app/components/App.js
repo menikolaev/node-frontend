@@ -39,18 +39,19 @@ class App extends React.Component {
   }
 
   render() {
+    var user = AccountStore.getState();
     console.log('App render executed');
     return (
       <div>
       <Navbar history={this.props.history}>
-      <Link className={styles.menuItem} to="/account">
-        {AccountStore.surname} {AccountStore.name}
+      <Link className={styles.menuItem + ' ' + styles.name} to="/account">
+        {user.name}
       </Link>
       <Link className={styles.menuItem} to="/student-requests">Мои заявки</Link>
       <Link className={styles.menuItem} to="/files">Список файлов</Link>
       <Link className={styles.menuItem} to="#">Выход</Link>
       </Navbar>
-      <main>
+      <main className={styles.main}>
       {this.props.children}
       </main>
       <Footer />

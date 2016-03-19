@@ -7,8 +7,6 @@ import AccountStore from '../stores/AccountStore';
 
 import styles from './Navbar.css';
 
-console.log(styles);
-
 class Navbar extends React.Component {
   constructor() {
     super();

@@ -10,7 +10,7 @@
 
 .menu {
   position: fixed;
-  width: 500px;
+  width: auto;
   right: 0;
   height: 60px;
 }

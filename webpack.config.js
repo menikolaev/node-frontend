@@ -5,7 +5,7 @@ module.exports = {
   context: __dirname + '/app',
   entry: {
     app: './entry.js',
-    vendor: ['jquery', 'bootstrap', 'toastr', 'magnific-popup'],
+    vendor: ['jquery', 'toastr', 'magnific-popup'],
   },
   output: {
     path: __dirname + '/dist',
