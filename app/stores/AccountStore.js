@@ -3,6 +3,7 @@
 */
 import alt from '../alt';
 import AccountActions from '../actions/AccountActions';
+import testData from './account.json';
 
 class AccountStore {
   constructor() {
